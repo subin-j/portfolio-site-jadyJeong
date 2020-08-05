@@ -28,6 +28,15 @@
   --weight-regular: 400;
 }
 
+/*Universal Tags*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 /* Typography */
 
 h1 {
@@ -56,4 +65,11 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+/*Navbar*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-pink);
 }
