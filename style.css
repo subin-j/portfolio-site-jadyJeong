@@ -158,6 +158,10 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -204,4 +208,15 @@ p {
 .job__period {
   color: var(--color-light-grey);
   font-size: var(--font-small);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+.job__description {
+  font-size: var(--font-micro);
+}
+
+/* Skills */
+#skills {
 }
