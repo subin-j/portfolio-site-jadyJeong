@@ -314,21 +314,24 @@ p {
 }
 
 .project {
-  position: relatvie;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: yellow;
+  background-color: var(--color-light-white);
 }
 
-.project__image {
+.project__img {
   max-width: 100%;
   max-height: 100%;
 }
 
 .project__description {
   position: absolute;
-  background-color: var(--color-black);
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -336,13 +339,21 @@ p {
   height: 100;
   top: 0;
   left: 0;
+  opacity: 0;
+  trnasform: translateY(10px);
+  transition: all var(--animation-duration) ease-in;
 }
 
-.projectr__desecription h3 {
+.project:hover.project__description {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+.project__description h3 {
   color: var(--color-white);
 }
 
-.project__descriptionh3: after {
+.project__description h3:after {
   content: "";
   display: block;
   position: relative;
