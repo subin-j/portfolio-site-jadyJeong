@@ -51,8 +51,12 @@ a {
 }
 
 ul {
-  list-style: none;
+  
   padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
 
 button {
@@ -93,11 +97,13 @@ p {
 
 /*Navbar*/
 #navbar {
+
   display: flex;
   justify-content: space-between;
   background-color: var(--color-pink);
   align-items: center;
   color: var(--color-white);
+
 }
 
 .navbar__menu {
@@ -283,6 +289,11 @@ p {
 }
 
 /* Work */
+
+.work__categories{
+  margin:40px;
+}
+
 .category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
@@ -296,11 +307,13 @@ p {
   color: var(--color-white);
 }
 
-.category__btn:active .category__count,
+.category__btn:active 
+.category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
 }
+
 .category__count {
   background-color: var(--color-orange);
   border-radius: 50%;
@@ -310,16 +323,18 @@ p {
   line-height: 24px;
   display: inline-block;
   position: relative;
-  top: -20px;
-  left: 4px;
+  top: -12px;
+  left: 16px;
   opacity: 0;
-  transition: var(--animation-duration) ease-in;
+  transition: all var(--animation-duration) ease-in;
 }
 
 .work__projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
 }
 
 .project {
