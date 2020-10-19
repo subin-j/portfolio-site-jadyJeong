@@ -5,7 +5,7 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #7e62a3;
+  --color-pink: #554575;
   --color-dark-pink: #2f1a52;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -105,6 +105,7 @@ p {
   align-items: center;
   color: var(--color-white);
   z-index: 1;
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 #navbar.navbar--dark{
